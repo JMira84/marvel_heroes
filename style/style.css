@@ -88,7 +88,7 @@ label {
 }
 
 label,
-input[type="button"] { text-transform: uppercase }
+.search-btn { text-transform: uppercase }
 
 .heroes-search {
     width: 70%;
@@ -101,7 +101,7 @@ input[type="button"] { text-transform: uppercase }
 }
 
 .heroes-search,
-input[type="button"] {
+.search-btn {
     padding: 10px 20px;
     font-size: 2rem;
     outline: none;
