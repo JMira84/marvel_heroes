@@ -89,6 +89,11 @@ label {
     font-size: 2rem;
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+}
+
 label,
 .search-btn { text-transform: uppercase }
 
