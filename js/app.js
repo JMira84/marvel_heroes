@@ -23,7 +23,7 @@ function getHero() {
     
     if (HERO_SEARCH.value === "") {
         ALERT_DIV.classList.add('show');
-        ALERT_MSG.textContent = 'Por favor escreve o nome de um super-herói da Marvel.';
+        ALERT_MSG.textContent = 'Por favor escreve o nome de um super-herói da Marvel';
     } else {
         ALERT_DIV.classList.remove('show');
     }
