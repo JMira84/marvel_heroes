@@ -92,6 +92,10 @@ label {
 label,
 .search-btn { text-transform: uppercase }
 
+.show { display: block!important }
+
+.form-container { position: relative }
+
 .heroes-search {
     width: 70%;
     min-width: 30%;
@@ -111,11 +115,23 @@ label,
 
 .error {
     position: absolute;
-    top: 60%;
-    left: 64%;
+    display: none;
+    top: 25%;
+    left: 97%;
+    width: 100%;
+
+    animation: alert .5s ease-in-out;
 }
 
 .error-msg {
     padding: 10px 15px;
     background-color: #b73ebf;
+}
+
+@keyframes alert {
+    0%{ transform: translate(0px) }
+    25%{ transform: translate(10px) }
+    50%{ transform: translate(0px) }
+    75%{ transform: translate(10px) }
+    100%{ transform: translate(0px) }
 }
