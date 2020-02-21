@@ -201,3 +201,12 @@ label,
     width: 180px;
     border: 7px solid #fff;
 }
+
+.hero-comics span {
+    font-weight: 200;
+}
+
+.comics-number {
+    padding-top: 10px;
+    font-size: 5rem;
+}
