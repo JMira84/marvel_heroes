@@ -113,7 +113,7 @@ label,
     outline: none;
 }
 
-.error {
+.alert {
     position: absolute;
     display: none;
     top: 25%;
@@ -123,7 +123,7 @@ label,
     animation: alert .5s ease-in-out;
 }
 
-.error-msg {
+.alert-msg {
     padding: 10px 15px;
     background-color: #b73ebf;
 }
