@@ -52,10 +52,17 @@ table {
 html { font-size: 62.5% }
 
 body {
-    height: 100vh;
+    height: auto;
     line-height: 1.6;
     color: #fff;
-    background: linear-gradient(rgb(163, 74, 47), rgb(143, 48, 102));
+    background-image: url(../assets/imgs/background.png);
+    background-clip: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #696969;
+	background-blend-mode: multiply;
 }
 
 body,
@@ -105,7 +112,10 @@ dt {
 }
 
 label,
-.search-btn { text-transform: uppercase }
+.search-btn { 
+    text-transform: uppercase;
+    cursor: pointer;
+}
 
 .show { display: block!important }
 
@@ -156,6 +166,7 @@ label,
 }
 
 .heroes-details {
+    position: relative;
     display: none;
     padding: 30px;
     background-color: #c6397d;
@@ -163,3 +174,11 @@ label,
 }
 
 .hero-name { text-transform: uppercase }
+
+.hero-thumbnail {
+    position: absolute;
+    top: 8px;
+    left: 75%;
+    width: 180px;
+    border: 7px solid #fff;
+}

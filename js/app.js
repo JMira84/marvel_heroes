@@ -34,7 +34,7 @@ function getHero() {
 
     Http.fetchData(URL)
         .then(responseData => {
-            const HERO_DATA = new HeroData(HERO, responseData.data.results[0].description, responseData.data.results[0].thumbnail);
+            const HERO_DATA = new HeroData(HERO, responseData.data.results[0].description, responseData.data.results[0].thumbnail.path);
             const HERO_PROXY = new Proxy(HERO_DATA, HERO_PROXY_HANDLER);
             updateHero(HERO_PROXY);
         })
