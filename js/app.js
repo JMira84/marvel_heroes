@@ -49,6 +49,11 @@ function getHero() {
 function updateHero(heroData) {
     HERO_NAME.textContent = heroData.heroName;
     HERO_DESCRIPTION.textContent = heroData.description;
+
+    if (heroData.description.length == 0) {
+        HERO_DESCRIPTION.textContent = 'No description available for this character.'
+    }
+
     HERO_IMG.src = heroData.thumbnail + '.jpg';
 
     HEROES_BOX.classList.add('show');
