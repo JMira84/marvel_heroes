@@ -1,6 +1,7 @@
 import { Http } from './http.js';
 import { HeroData, HERO_PROXY_HANDLER } from './hero-data.js';
 
+const FORM = document.querySelector('form');
 const HERO_SEARCH = document.querySelector('.heroes-search');
 const BTN = document.querySelector('.search-btn');
 
@@ -16,7 +17,10 @@ const HERO_IMG = document.querySelector('.hero-thumbnail');
 const KEY = 'afce3e26aaca99c4dd5e53a051ed2fbb';
 
 
-BTN.addEventListener('click', getHero);
+FORM.addEventListener('submit', (e) => {
+    e.preventDefault();
+    getHero();
+});
 
 function getHero() {
     const HERO = HERO_SEARCH.value.trim();
