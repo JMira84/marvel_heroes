@@ -12,8 +12,10 @@ BTN.addEventListener('click', getHero);
 function getHero() {
     const HERO_NAME = HERO_SEARCH.value.trim();
 
-    if(HERO_NAME.length == 0) {
+    if (HERO_SEARCH.value === "") {
         ALERT_DIV.classList.add('show');
         ALERT_MSG.textContent = 'Por favor escreve o nome de um super-herói da Marvel';
+    } else {
+        ALERT_DIV.classList.remove('show');
     }
 }
