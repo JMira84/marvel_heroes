@@ -10,23 +10,24 @@
         <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
-        <main>
-            <h1>Marvel Heroes</h1>
-            
-            <div class="form-container">
-                <form method="get" action="index.html">
-                    <label for="heroes-search">Procura um Super-Herói</label>
-                    <input class="heroes-search" id="heroes-search" type="text" name="heroes" placeholder="Ex: Hulk">
-
-                    <input class="search-btn" type="button" name="search-btn" value="Procurar">
-                </form>
-
-                <div class="alert">
-                    <h2 class="alert-msg">Erro</h2>
-                </div>
-            </div> <!--end form-container-->
-
-        </main>
+        <div class="container">
+            <main>
+                <h1>Marvel Heroes</h1>
+                
+                <div class="form-container">
+                    <form method="get" action="index.html">
+                        <label for="heroes-search">Procura um Super-Herói</label>
+                        <input class="heroes-search" id="heroes-search" type="text" name="heroes" placeholder="Ex: Hulk">
+    
+                        <input class="search-btn" type="button" name="search-btn" value="Procurar">
+                    </form>
+    
+                    <div class="alert">
+                        <h2 class="alert-msg">Erro</h2>
+                    </div>
+                </div> <!--end form-container-->
+            </main>
+        </div> <!--end container-->
 
         <script>
             System.import('js/app.js');
