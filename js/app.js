@@ -56,8 +56,7 @@ function updateHero(heroData) {
     }
 
     HERO_IMG.src = heroData.thumbnail + '.jpg';
-    HERO_COMICS.appendChild(document.createElement('p')).classList.add('comics-number');
-    HERO_COMICS.lastElementChild.textContent = heroData.comics;
+    HERO_COMICS.textContent = heroData.comics;
 
     HEROES_BOX.classList.add('show');
 };
