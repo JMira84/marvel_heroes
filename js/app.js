@@ -20,6 +20,7 @@ const KEY = 'afce3e26aaca99c4dd5e53a051ed2fbb';
 FORM.addEventListener('submit', (e) => {
     e.preventDefault();
     getHero();
+    FORM.reset();
 });
 
 function getHero() {
