@@ -13,6 +13,7 @@ const HEROES_BOX = document.querySelector('.heroes-details');
 const HERO_NAME = document.querySelector('.hero-name');
 const HERO_DESCRIPTION = document.querySelector('.hero-description');
 const HERO_IMG = document.querySelector('.hero-thumbnail');
+const HERO_COMICS = document.querySelector('.hero-comics');
 
 const KEY = 'afce3e26aaca99c4dd5e53a051ed2fbb';
 
@@ -39,7 +40,7 @@ function getHero() {
 
     Http.fetchData(URL)
         .then(responseData => {
-            const HERO_DATA = new HeroData(HERO, responseData.data.results[0].description, responseData.data.results[0].thumbnail.path);
+            const HERO_DATA = new HeroData(HERO, responseData.data.results[0].description, responseData.data.results[0].thumbnail.path, responseData.data.results[0].comics.collectionURI);
             const HERO_PROXY = new Proxy(HERO_DATA, HERO_PROXY_HANDLER);
             updateHero(HERO_PROXY);
         })
@@ -55,6 +56,7 @@ function updateHero(heroData) {
     }
 
     HERO_IMG.src = heroData.thumbnail + '.jpg';
+    HERO_COMICS.textContent = heroData.comics;
 
     HEROES_BOX.classList.add('show');
 };

@@ -1,9 +1,9 @@
 export class HeroData {
-    constructor(heroName, description, thumbnail) {
+    constructor(heroName, description, thumbnail, comics) {
         this.heroName = heroName;
         this.description = description;
         this.thumbnail = thumbnail;
-        this.comics = comics
+        this.comics = comics;
     }
 };
 
