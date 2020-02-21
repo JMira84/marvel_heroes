@@ -124,28 +124,40 @@ label,
     position: relative; 
 }
 
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .heroes-search {
     width: 70%;
     min-width: 30%;
-    margin-bottom: 20px;
+    padding: 10px 20px;
     border: 1px solid transparent;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     font-weight: 600;
     text-align: center;
 }
 
 .heroes-search,
 .search-btn {
-    padding: 10px 20px;
     font-size: 2rem;
     outline: none;
+}
+
+.search-btn {
+    padding: 14px;
+    border: 1px solid transparent;
+    border-radius: 0 20px 20px 0;
+    background-color: #cd49d6;
+    color: #fff;
 }
 
 .alert {
     position: absolute;
     display: none;
-    top: 25%;
-    left: 97%;
+    bottom: -92px;
     width: 100%;
 
     animation: alert .5s ease-in-out;

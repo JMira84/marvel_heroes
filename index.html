@@ -7,6 +7,7 @@
         <title>Marvel Heroes</title>
         <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.31/system.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
@@ -17,9 +18,12 @@
                 <div class="form-container">
                     <form method="get" action="index.html">
                         <label for="heroes-search">Search for a Marvel hero</label>
-                        <input class="heroes-search" id="heroes-search" type="text" name="heroes" placeholder="Ex: Hulk">
-    
-                        <input class="search-btn" type="submit" name="search-btn" value="Search">
+                        <div class="input-container">
+                            <input class="heroes-search" id="heroes-search" type="text" name="heroes" placeholder="Ex: Hulk">
+                            <button class="search-btn" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div> <!--end input-container-->
                     </form>
     
                     <div class="alert">
