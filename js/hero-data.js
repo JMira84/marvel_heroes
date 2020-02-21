@@ -3,6 +3,7 @@ export class HeroData {
         this.heroName = heroName;
         this.description = description;
         this.thumbnail = thumbnail;
+        this.comics = comics
     }
 };
 
