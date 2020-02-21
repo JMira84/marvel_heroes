@@ -67,7 +67,7 @@ body {
 
 body,
 input,
-input::placeholder { font-family: 'Poppins', sans-serif }
+.heroes-search::placeholder { font-family: 'Poppins', sans-serif }
 
 main {
     display: flex;
@@ -141,6 +141,8 @@ label,
     font-weight: 600;
     text-align: center;
 }
+
+.heroes-search::placeholder { color: rgb(207, 207, 207) }
 
 .heroes-search,
 .search-btn {
