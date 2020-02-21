@@ -192,12 +192,15 @@ label,
     box-shadow: 8px 10px 0px #6a0d52, 0 1px 2px #6a0d52;
 }
 
-.hero-name { text-transform: uppercase }
+.hero-name {
+    font-size: 5rem; 
+    text-transform: uppercase 
+}
 
 .hero-thumbnail {
     position: absolute;
-    top: 8px;
-    left: 75%;
+    top: 15px;
+    right: 15px;
     width: 180px;
     border: 7px solid #fff;
 }
