@@ -80,7 +80,8 @@ h1 {
     margin-bottom: 50px;
     font-size: 10rem;
     font-weight: 600;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px black;
 }
 
 h2,
@@ -95,6 +96,7 @@ form {
 label {
     margin-bottom: 20px;
     font-size: 2rem;
+    text-shadow: 1px 1px 4px black;
 }
 
 dl { margin-bottom: 30px }
@@ -144,6 +146,8 @@ label,
 .search-btn {
     font-size: 2rem;
     outline: none;
+
+    transition: all .2s ease-in-out;
 }
 
 .search-btn {
@@ -153,6 +157,9 @@ label,
     background-color: #cd49d6;
     color: #fff;
 }
+
+.heroes-search:focus,
+.heroes-search:focus .search-btn { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) }
 
 .alert {
     position: absolute;
