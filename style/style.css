@@ -99,7 +99,7 @@ label {
     text-shadow: 1px 1px 4px black;
 }
 
-dl { margin-bottom: 30px }
+dl { margin-bottom: 50px }
 
 dt {
     padding-bottom: 15px;
@@ -202,11 +202,7 @@ label,
     border: 7px solid #fff;
 }
 
-.hero-comics span {
-    font-weight: 200;
-}
-
-.comics-number {
-    padding-top: 10px;
-    font-size: 5rem;
+.hero-comics {
+    font-weight: 600;
+    font-size: 10rem;
 }
