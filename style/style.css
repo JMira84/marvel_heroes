@@ -90,9 +90,10 @@ label {
     font-size: 2rem;
 }
 
-dl { padding: 20px }
+dl { margin-bottom: 30px }
 
 dt {
+    padding-bottom: 15px;
     font-size: 3rem;
     font-weight: 200;
     text-transform: uppercase;
@@ -156,6 +157,9 @@ label,
 
 .heroes-details {
     display: none;
-    background-color: #b73ebf;
-    box-shadow: 8px 10px 0px #511c55, 0 1px 2px #511c55;
+    padding: 30px;
+    background-color: #c6397d;
+    box-shadow: 8px 10px 0px #6a0d52, 0 1px 2px #6a0d52;
 }
+
+.hero-name { text-transform: uppercase }
