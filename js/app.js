@@ -40,7 +40,7 @@ function getHero() {
 
     Http.fetchData(URL)
         .then(responseData => {
-            const HERO_DATA = new HeroData(HERO, responseData.data.results[0].description, responseData.data.results[0].thumbnail.path, responseData.data.results[0].comics.collectionURI);
+            const HERO_DATA = new HeroData(HERO, responseData.data.results[0].description, responseData.data.results[0].thumbnail.path, responseData.data.results[0].comics.returned);
             const HERO_PROXY = new Proxy(HERO_DATA, HERO_PROXY_HANDLER);
             updateHero(HERO_PROXY);
         })
@@ -56,7 +56,7 @@ function updateHero(heroData) {
     }
 
     HERO_IMG.src = heroData.thumbnail + '.jpg';
-    HERO_COMICS.href = heroData.comics;
+    HERO_COMICS.textContent = heroData.comics;
 
     HEROES_BOX.classList.add('show');
 };
