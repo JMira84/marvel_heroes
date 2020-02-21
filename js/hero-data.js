@@ -5,3 +5,9 @@ export class HeroData {
         this.thumbnail = thumbnail;
     }
 };
+
+export const HERO_PROXY_HANDLER = {
+    get: function(target, property) {
+        return Reflect.get(target, property);
+    }
+}
