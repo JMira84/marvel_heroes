@@ -52,6 +52,7 @@ table {
 html { font-size: 62.5% }
 
 body {
+    height: 100vh;
     line-height: 1.6;
     color: #fff;
     background: linear-gradient(rgb(163, 74, 47), rgb(143, 48, 102));
@@ -66,7 +67,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 h1 { 
@@ -76,7 +76,8 @@ h1 {
     text-transform: uppercase; 
 }
 
-h2 { font-size: 1.6rem }
+h2,
+dd { font-size: 1.6rem }
 
 form {
     display: flex;
@@ -89,9 +90,17 @@ label {
     font-size: 2rem;
 }
 
+dl { padding: 20px }
+
+dt {
+    font-size: 3rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
 .container {
     max-width: 800px;
-    margin: 0 auto 0 auto;
+    margin: 100px auto 50px auto;
 }
 
 label,
@@ -99,7 +108,10 @@ label,
 
 .show { display: block!important }
 
-.form-container { position: relative }
+.form-container {
+    margin-bottom: 80px; 
+    position: relative; 
+}
 
 .heroes-search {
     width: 70%;
@@ -140,4 +152,10 @@ label,
     50%{ transform: translate(0px) }
     75%{ transform: translate(10px) }
     100%{ transform: translate(0px) }
+}
+
+.heroes-details {
+    display: none;
+    background-color: #b73ebf;
+    box-shadow: 8px 10px 0px #511c55, 0 1px 2px #511c55;
 }
