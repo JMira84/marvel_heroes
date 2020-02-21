@@ -76,6 +76,8 @@ h1 {
     text-transform: uppercase; 
 }
 
+h2 { font-size: 1.6rem }
+
 form {
     display: flex;
     flex-direction: column;
@@ -105,4 +107,15 @@ label,
     padding: 10px 20px;
     font-size: 2rem;
     outline: none;
+}
+
+.error {
+    position: absolute;
+    top: 60%;
+    left: 64%;
+}
+
+.error-msg {
+    padding: 10px 15px;
+    background-color: #b73ebf;
 }
