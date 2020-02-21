@@ -1,7 +1,10 @@
+import { Http } from '.http.js';
+
 const HERO_SEARCH = document.querySelector('.heroes-search');
 const BTN = document.querySelector('.search-btn');
 const ALERT_DIV = document.querySelector('.alert');
 const ALERT_MSG = document.querySelector('.alert-msg');
+const HEROES_BOX = document.querySelector('.heroes-details');
 
 const KEY = 'afce3e26aaca99c4dd5e53a051ed2fbb';
 
@@ -18,4 +21,6 @@ function getHero() {
     } else {
         ALERT_DIV.classList.remove('show');
     }
+
+    HEROES_BOX.classList.add('show');
 }
